@@ -1,5 +1,6 @@
 package com.adriantoral.practicaandroid.ui
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.view.View.OnClickListener
@@ -85,10 +86,8 @@ class MainActivity : AppCompatActivity(), OnClickListener {
                             .make(v, "Sesión iniciada correctamente", Snackbar.LENGTH_LONG)
                             .show()
 
-//                        val intent: Intent = Intent(applicationContext, MainActivity::class.java)
-//                        intent.putExtra("usuario", usuario)
-//                        startActivity(intent)
-//                        finish()
+                        startActivity(Intent(applicationContext, HomeActivity::class.java))
+                        finish()
                     }
             }
         }
