@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "391936964941",
+    "project_id": "ato-utad2324",
+    "storage_bucket": "ato-utad2324.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391936964941:android:2c59279422f172468e5f04",
+        "android_client_info": {
+          "package_name": "com.adriantoral.login"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiXpP4dzCWZ2w8ycViJNFF026y-QhqOIc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391936964941:android:9503803d7d6d1f108e5f04",
+        "android_client_info": {
+          "package_name": "com.adriantoral.practicaandroid"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiXpP4dzCWZ2w8ycViJNFF026y-QhqOIc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
