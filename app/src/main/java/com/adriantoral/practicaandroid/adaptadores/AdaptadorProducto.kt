@@ -1,16 +1,18 @@
 package com.adriantoral.practicaandroid.adaptadores
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.adriantoral.practicaandroid.R
 import com.adriantoral.practicaandroid.modelos.Producto
+import com.adriantoral.practicaandroid.ui.ProductActivity
 import com.bumptech.glide.Glide
-import com.google.android.material.snackbar.Snackbar
 
 class AdaptadorProducto(var context: Context) : RecyclerView.Adapter<AdaptadorProducto.Holder>() {
     private val lista: ArrayList<Producto> = ArrayList()
@@ -22,7 +24,9 @@ class AdaptadorProducto(var context: Context) : RecyclerView.Adapter<AdaptadorPr
 
         init {
             view.setOnClickListener {
-                Snackbar.make(view, "Has pulsado ${idFila.text} en ${titulo.text}", Snackbar.LENGTH_LONG).show()
+                val intent = Intent(view.context, ProductActivity::class.java)
+                intent.putExtra("idProducto", idFila.text)
+                startActivity(view.context, intent, null)
             }
         }
     }
