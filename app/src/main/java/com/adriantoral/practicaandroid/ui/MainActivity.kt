@@ -31,18 +31,11 @@ class MainActivity : AppCompatActivity(), OnClickListener {
     }
 
     private fun setListeners() {
-        binding.buttonSignup.setOnClickListener(this)
         binding.buttonLogin.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
         when (v!!.id) {
-            binding.buttonSignup.id -> {
-//                val intent: Intent = Intent(applicationContext, SignupActivity::class.java)
-//                startActivity(intent)
-//                finish()
-            }
-
             binding.buttonLogin.id -> {
                 usuario.correo = binding.editUser.text.toString()
                 usuario.password = binding.editPassword.text.toString()
