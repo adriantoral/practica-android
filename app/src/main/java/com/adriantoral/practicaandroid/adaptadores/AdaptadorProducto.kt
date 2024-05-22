@@ -40,7 +40,7 @@ class AdaptadorProducto(var context: Context) : RecyclerView.Adapter<AdaptadorPr
     override fun onBindViewHolder(holder: Holder, position: Int) {
         val producto = this.lista[position]
         holder.titulo.text = producto.title
-        holder.idFila.text = producto.id.toString()
+        holder.idFila.text = producto.firebase_id
         Glide
             .with(this.context)
             .load(producto.image)
@@ -55,5 +55,10 @@ class AdaptadorProducto(var context: Context) : RecyclerView.Adapter<AdaptadorPr
     fun addProducto(producto: Producto) {
         this.lista.add(producto)
         this.notifyItemInserted(this.lista.size - 1)
+    }
+
+    fun clear() {
+        this.lista.clear()
+        this.notifyDataSetChanged()
     }
 }

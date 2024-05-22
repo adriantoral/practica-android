@@ -15,6 +15,7 @@
         android:layout_marginTop="64dp"
         android:gravity="center"
         android:hint="Introduce tu correo"
+        android:text="hola@hola.com"
         android:inputType="text" />
 
     <EditText
@@ -24,6 +25,7 @@
         android:layout_marginTop="12dp"
         android:gravity="center"
         android:hint="Introduce tu contraseña"
+        android:text="Hola@12345"
         android:inputType="textPassword" />
 
     <Button
